@@ -4,127 +4,143 @@ def lake(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.fillcolor('blue')
+    turtle.fillcolor('#0000FF')
     turtle.begin_fill()
     turtle.circle(a)
     turtle.end_fill()
 
 lake(850, -500, 70)
 
-def fishbody(x, y, a):
+
+
+def boatbelow(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.fillcolor('#848482')
+    turtle.fillcolor('#964B00')
     turtle.begin_fill()
-    turtle.left(135)
-    turtle.forward(a)
-    turtle.left(90)
-    turtle.forward(a)
-    turtle.left(90)
-    turtle.forward(a)
-    turtle.left(90)
-    turtle.forward(a)
-    turtle.end_fill()
-    turtle.right(45)
-
-
-fishbody(860, -460, 15)
-
-def fisharm( x, y, a):
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.fillcolor('#808080')
-    turtle.begin_fill()
-    turtle.right(135)
-    turtle.forward(a*(2**0.5))
-    turtle.left(135)
-    turtle.forward(a)
-    turtle.left(90)
-    turtle.forward(a)
-    turtle.end_fill()
-    turtle.fillcolor('#808080')
-    turtle.begin_fill()
-    turtle.forward(a)
-    turtle.left(90)
+    turtle.left(45)
     turtle.forward(a)
     turtle.left(135)
     turtle.forward(a*(2**0.5))
+    turtle.left(135)
+    turtle.forward(a)
     turtle.end_fill()
     turtle.left(45)
 
+boatbelow(850, -410, 15)
 
-fisharm( 860, -460, 30)
 
-def fishhat( x, y, a):
+
+def boatbelow2(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.fillcolor('#c0c0c0')
+    turtle.fillcolor('#964B00')
     turtle.begin_fill()
-    turtle.right(45)
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(135)
-    turtle.forward(a * (2 ** 0.5))
-    turtle.right(90)
-    turtle.end_fill()
-
-fishhat( 860, -445, 21)
-
-def fischass(x, y, a):
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.fillcolor('#00ffff')
-    turtle.begin_fill()
-    turtle.left(120)
+    turtle.left(135)
     turtle.forward(1.5 * a)
-    turtle.left(60)
+    turtle.left(45)
     turtle.forward(a)
-    turtle.left(120)
+    turtle.left(135)
     turtle.forward(1.5 * a)
-    turtle.left(60)
+    turtle.left(45)
     turtle.forward(a)
     turtle.end_fill()
 
-fischass(838, -460, 15)
+boatbelow2(850, -410, 10)
 
 
-def fish2ass( x, y, a):
+def boatmid(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.fillcolor('#00ffff')
+    turtle.fillcolor('#654321')
     turtle.begin_fill()
-    turtle.left(180)
+    turtle.left(45)
+    turtle.forward(a)
+    turtle.left(90)
+    turtle.forward(a)
+    turtle.left(90)
+    turtle.forward(a)
+    turtle.left(90)
+    turtle.forward(a)
+    turtle.end_fill()
+    turtle.left(45)
+
+boatmid(861, -399, 10)
+
+def boatmid2(x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('#654321')
+    turtle.begin_fill()
+    turtle.left(135)
     turtle.forward(a)
     turtle.left(90)
     turtle.forward(a)
     turtle.left(135)
     turtle.forward(a*(2**0.5))
-    turtle.right(45)
     turtle.end_fill()
 
-fish2ass( 838, -460, 15)
+boatmid2(861, -399, 10)
 
-def fish3ass( x, y, a):
+
+
+
+def boatup(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.fillcolor('#00ffff')
+    turtle.fillcolor('#ECEBE9')
     turtle.begin_fill()
-    turtle.right(135)
+    turtle.left(135)
+    turtle.forward(a)
+    turtle.left(135)
+    turtle.forward(a*(2**0.5))
+    turtle.left(135)
+    turtle.forward(a)
+    turtle.right(45)
+    turtle.end_fill()
+
+
+
+boatup(861, -385, 20)
+
+
+def boatup2( x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('#FF0000')
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.left(135)
     turtle.forward(a*(2**0.5))
     turtle.left(135)
     turtle.forward(a)
     turtle.left(90)
-    turtle.forward(a)
-    turtle.right(90)
     turtle.end_fill()
 
-fish3ass( 823, -460, 15)
+
+boatup2( 847, -370, 10)
+
+def boatmid3( x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('#d3d3d3')
+    turtle.begin_fill()
+    turtle.left(90)
+    turtle.forward(a)
+    turtle.left(135)
+    turtle.forward(a*(2**0.5))
+    turtle.left(135)
+    turtle.forward(a)
+    turtle.end_fill()
+
+boatmid3( 847, -395, 20)
+
 
 turtle.done()
