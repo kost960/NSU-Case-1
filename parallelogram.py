@@ -1,6 +1,6 @@
 import turtle
 
-def parallelepiped(x, y, a):
+def parallelogram(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -13,8 +13,4 @@ def parallelepiped(x, y, a):
     turtle.left(60)
     turtle.forward(a)
 
-def main_parallelepiped():
-    parallelepiped(-200, 200,180)
-    turtle.done()
-
-main_parallelepiped()
+parallelogram(-200, 200,180)
