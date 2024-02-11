@@ -245,3 +245,4 @@ def foot_l(x, y, a):
 foot_l(-310, -290,25)
 
 turtle.done()
+turtle.done()
