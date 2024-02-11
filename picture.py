@@ -895,6 +895,5 @@ def tail2(x, y, a):
 
 tail2(751, 396, 30)
 
-
 turtle.done()
 
