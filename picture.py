@@ -15,7 +15,7 @@ def sky(x, y, a, b):
         turtle.left(90)
 
     turtle.end_fill()
-sky( -960, -80, 1920, 540 )
+sky( -960, -80, 1920, 650 )
 
 def sqr_bd_hm(x, y, a):
     turtle.up()
@@ -151,7 +151,7 @@ def ns_rckt(x, y, a):
     turtle.right(135)
     turtle.end_fill()
 
-ns_rckt(-840,450, 35)
+ns_rckt(-340,450, 35)
 
 def bd_rckt1(x, y, a):
     turtle.up()
@@ -168,7 +168,7 @@ def bd_rckt1(x, y, a):
     turtle.right(90)
     turtle.end_fill()
 
-bd_rckt1(-815,421, 50)
+bd_rckt1(-315,421, 50)
 
 def bd_rckt2(x, y, a):
     turtle.up()
@@ -185,7 +185,7 @@ def bd_rckt2(x, y, a):
     turtle.right(90)
     turtle.end_fill()
 
-bd_rckt2 (-865, 415,69)
+bd_rckt2 (-365, 415,69)
 
 def bd_rckt3(x, y, a):
     turtle.up()
@@ -202,7 +202,7 @@ def bd_rckt3(x, y, a):
     turtle.right(45)
     turtle.end_fill()
 
-bd_rckt3 (-815, 361,50)
+bd_rckt3 (-315, 361,50)
 
 def wingl_rckt(x, y, a):
     turtle.up()
@@ -222,7 +222,7 @@ def wingl_rckt(x, y, a):
     turtle.end_fill()
 
 
-wingl_rckt(-869, 335,25)
+wingl_rckt(-369, 335,25)
 
 def wingr_rckt(x, y, a):
     turtle.up()
@@ -241,7 +241,7 @@ def wingr_rckt(x, y, a):
     turtle.right(120)
     turtle.end_fill()
 
-wingr_rckt(-811, 335,25)
+wingr_rckt(-311, 335,25)
 
 def fire_rckt(x, y, a):
     turtle.up()
@@ -260,7 +260,7 @@ def fire_rckt(x, y, a):
     turtle.forward(a)
     turtle.end_fill()
 
-fire_rckt(-840, 282,25)
+fire_rckt(-340, 282,25)
 
 def fire_rckt2(x, y, a):
     turtle.up()
@@ -280,7 +280,7 @@ def fire_rckt2(x, y, a):
     turtle.end_fill()
     turtle.right(30)
 
-fire_rckt2(-840, 262,25)
+fire_rckt2(-340, 262,25)
 
 def grass(x, y, a, b):
     turtle.up()
@@ -297,7 +297,138 @@ def grass(x, y, a, b):
     turtle.end_fill()
 grass( -960, -80, 1920, 480 )
 
-def head(x, y, a):
+def bd_сhkn(x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('#444444')
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.forward(a * (2 ** 0.5))
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.end_fill()
+
+
+bd_сhkn(270, -180, 75)
+
+
+def foot_chkn(x, y, a, b):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('#444444')
+    turtle.begin_fill()
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(45)
+    turtle.end_fill()
+
+foot_chkn(322, -207, 34, 48)
+
+
+def tl_chkn(x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('#ffffff')
+    turtle.begin_fill()
+    turtle.left(180)
+    turtle.forward(a)
+    turtle.left(135)
+    turtle.forward(a * (2 ** 0.5))
+    turtle.left(135)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.end_fill()
+
+
+tl_chkn(265, -140, 75)
+
+
+def tl2_chkn(x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('#ffffff')
+    turtle.begin_fill()
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.left(135)
+    turtle.forward(a * (2 ** 0.5))
+    turtle.left(135)
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.end_fill()
+
+
+tl2_chkn(228, -100, 52)
+
+def tl3_chkn(x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('#ffffff')
+    turtle.begin_fill()
+    turtle.right(90)
+    turtle.forward(1.5*a)
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.right(45)
+    turtle.forward(1.5*a)
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.left(45)
+    turtle.end_fill()
+
+tl3_chkn(215, -170, 35)
+
+
+def hd1_chkn(x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('#444444')
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.end_fill()
+
+
+hd1_chkn(310, -141, 35)
+
+
+def hd2_chkn(x, y, a):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.fillcolor('red')
+    turtle.begin_fill()
+    turtle.right(135)
+    turtle.forward(a)
+    turtle.left(135)
+    turtle.forward(a * (2 ** 0.5))
+    turtle.left(135)
+    turtle.forward(a)
+    turtle.right(135)
+    turtle.end_fill()
+
+
+hd2_chkn(334, -112, 35)
+
+def head_hm(x, y, a):
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -308,7 +439,7 @@ def head(x, y, a):
         turtle.forward(a)
     turtle.end_fill()
 
-head(-220, -175, 25)
+head_hm(-220, -175, 25)
 
 def bd_hm(x, y, a):
     turtle.up()
